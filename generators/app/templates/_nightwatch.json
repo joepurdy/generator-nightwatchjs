@@ -1,0 +1,88 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "commands",
+  "custom_assertions_path" : "assertions",
+  "page_objects_path" : "pages",
+  "globals_path" : "globals.js",
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "node_modules/selenium-server/lib/runner/selenium-server-standalone-2.53.1.jar",
+    "log_path" : "output/logs",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
+  	  "webdriver.edge.driver" : "node_modules/edgedriver/lib/edgedriver/MicrosoftWebDriver.exe",
+      "webdriver.ie.driver" : "node_modules/iedriver/lib/iedriver/IEDriverServer.exe"
+    }
+  },
+
+  "test_settings" : {
+
+    "default" : {
+      "launch_url" : "",
+      "silent": true,
+      "end_session_on_fail": false,
+      "skip_testcases_on_fail": false,
+      "screenshots" : {
+        "enabled" : true,
+        "on_failure" : true,
+        "on_error" : true,
+        "path" : "output/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      },
+      "exclude" : ["tests/disabled*"]
+    },
+
+  	"firefox" : {
+  	  "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+  	},
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+  	"edge" : {
+      "desiredCapabilities": {
+        "browserName": "MicrosoftEdge",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+  	"ie" : {
+      "desiredCapabilities": {
+        "browserName": "internet explorer",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "phantomjs" : {
+      "desiredCapabilities" : {
+        "browserName" : "phantomjs",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "phantomjs.binary.path" : "node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs.exe"
+      }
+    },
+
+    "debug" : {
+      "silent": false
+    }
+  }
+}

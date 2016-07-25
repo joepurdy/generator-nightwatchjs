@@ -1,0 +1,3 @@
+# Ignore folder contents, but includes folder #
+*
+!.gitignore
