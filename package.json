@@ -1,6 +1,6 @@
 {
   "name": "generator-nightwatchjs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Yeoman code generator for Nightwatch.js. Nightwatch.js is an easy to use Node.js based End-to-End (E2E) testing solution for browser based apps and websites built on top of the Selenium WebDriver API",
   "homepage": "https://github.com/joepurdy/generator-nightwatchjs",
   "author": {
