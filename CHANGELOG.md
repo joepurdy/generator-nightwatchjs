@@ -1,5 +1,9 @@
 # Changelog
 
+## HEAD
+* Corrected version in `package.json`
+* Updated dependancies for yeoman-generator, eslint, eslint-config-xo-space, gulp-eslint and gulp-istanbul
+
 ## 0.1.0
 
 * Initial configuration for nightwatch.js yeoman generator
