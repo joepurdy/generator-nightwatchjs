@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  'Test': function (client) {
+  'Test Google': function (client) {
     var google = client.page.google();
 
     google.navigate()

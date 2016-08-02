@@ -7,7 +7,7 @@ module.exports = {
       selector: 'input[type=text]' 
     },
     submit: { 
-      selector: '//[@name="q"]', 
+      selector: '//button[@name="btnG"]', 
       locateStrategy: 'xpath' 
     }
   }
